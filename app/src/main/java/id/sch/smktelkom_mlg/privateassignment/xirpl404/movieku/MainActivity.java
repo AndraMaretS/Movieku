@@ -17,7 +17,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import id.sch.smktelkom_mlg.privateassignment.xirpl404.movieku.adapter.SourceAdapter;
+
+public class MainActivity extends AppCompatActivity implements SourceAdapter.ISourceAdapter {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -84,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void showArticles(String id, String name, String sortBy) {
+
     }
 
     /**
