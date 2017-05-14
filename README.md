@@ -20,7 +20,7 @@ Film ditampilkan dalam bentuk tab. Tab pertama berisi film Popular, tab kedua be
 tab ketiga berisi Comming Soon yaitu  film yang akan segera rilis dan yang terakhir tab Top Rated yaitu list film dengan rate tertinggi.
 ### Kelebihan dari Aplikasi menurut kalian
 Menampilkan berbagai list film berdasarkan Pupular, Now Playing, Comming Soon, dan Top Rated. Desain simple dan mudah digunakan.
-### Screenshot dari Aplikasi minimal 5 buah (atur posisinya dengan baik, atur ukuran agar mudah dilihat/dibaca, tidak terlalu kecil juga tidak terlalu besar)
+### Screenshot dari Aplikasi
 
 Popular | Now Playing
 ------------ | -------------
