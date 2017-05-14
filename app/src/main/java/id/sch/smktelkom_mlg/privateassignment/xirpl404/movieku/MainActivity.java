@@ -143,11 +143,13 @@ public class MainActivity extends AppCompatActivity implements SourceAdapter.ISo
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             if (position == 0)
-                return PlaceholderFragment.newInstance(position + 1);
+                return new PopularFragment();
             else if (position == 1)
                 return new NowPlayingFragment();
-            else
+            else if (position == 2)
                 return new CommingSoonFragment();
+            else
+                return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override
@@ -160,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements SourceAdapter.ISo
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Home";
+                    return "Populer";
                 case 1:
                     return "Now Playing";
                 case 2:

@@ -11,14 +11,11 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import id.sch.smktelkom_mlg.privateassignment.xirpl404.movieku.R;
 import id.sch.smktelkom_mlg.privateassignment.xirpl404.movieku.model.Source;
 
-/**
- * Created by hyuam on 12/10/2016.
- */
+
 
 public class SourceAdapter extends RecyclerView.Adapter<SourceAdapter.ViewHolder> {
     public static final String IMAGE_URL_BASE_PATH = "http://image.tmdb.org/t/p/w500";
@@ -47,7 +44,7 @@ public class SourceAdapter extends RecyclerView.Adapter<SourceAdapter.ViewHolder
         holder.tvDesc.setText(source.overview);
         //holder.itemView.setBackgroundColor(source.color);
         Glide.with(context)
-                .load(IMAGE_URL_BASE_PATH + source.poster_path)
+                .load(IMAGE_URL_BASE_PATH + source.backdrop_path)
                 .into(holder.ivPoster);
     }
 
@@ -72,14 +69,7 @@ public class SourceAdapter extends RecyclerView.Adapter<SourceAdapter.ViewHolder
             tvName = (TextView) itemView.findViewById(R.id.textViewName);
             tvDesc = (TextView) itemView.findViewById(R.id.textViewDesc);
             ivPoster = (ImageView) itemView.findViewById(R.id.imageView);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Source source = list.get(getAdapterPosition());
-                    List<String> sort = source.sortBysAvailable;
-                    mISourceAdapter.showArticles(source.id, source.title, sort.get(sort.size() - 1));
-                }
-            });
+
         }
     }
 }
