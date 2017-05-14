@@ -3,7 +3,6 @@ package id.sch.smktelkom_mlg.privateassignment.xirpl404.movieku.model;
 import java.util.List;
 
 public class Source {
-
     public String id;
     //public String name;
     //public String description;
