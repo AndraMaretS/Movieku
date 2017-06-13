@@ -12,7 +12,7 @@ https://www.themoviedb.org/documentation/api
 ### Jenis Navigasi yang digunakan pada Aplikasi 
 Navigation Tabs (Action Bar Tabs (with ViewPager))
 ### Library dari Local Database yang digunakan pada Aplikasi
-SQLite dasar
+SQLite dasar untuk menampilkan data saat offline
 ### Deskripsi singkat dari aplikasi minimal 200 karakter
 Aplikasi Movieku adalah aplikasi yang menampilakan berbagai list film di dunia menggunakan Api TheMovie db. 
 Aplikasi ini mengunakan library Volley untuk mendownload data dan Glide untuk mendownload Glide. 
